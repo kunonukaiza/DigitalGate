@@ -19,7 +19,7 @@ class digitalisedGate
 	{
 		return name;
 	}	
-	public static  void mwenyeji(String jinaLaMwenyeji, int idadiYaKUkosea) 
+	public static  void mwenyeji(String jinaLaMwenyeji) 
 	{
 		 switch(jinaLaMwenyeji)
 		    {
@@ -46,7 +46,7 @@ class digitalisedGate
 		    	    	   int idadiYaKukosea = 0;
 		    	    	   while( idadiYaKukosea < 2)
 		    	    	     {
-		    		          System.out.println( "\n" + jinaLaMwenyeji + " umekosea kuingiza nywila yako!\n"
+		    		          System.out.println( "\n" + jinaLaMwenyeji + " umekosea kuandika funguo yako!\n"
 		    		  		             + "Tafadhali jaribu kuingiza tena kwa umakini.");
 		    		  
 		    		          Scanner gatePinKaiza2 = new Scanner(System.in);
@@ -67,13 +67,13 @@ class digitalisedGate
 			    	       }
 		    	    	   
 		    	    	   if(idadiYaKukosea == 2)
-		    	    	   System.out.println("Umezidi idadi ya kukosea kuingiza nywila inayoruhusiwa.");
+		    	    	   System.out.println("Umezidi idadi ya kukosea kuandika funguo inayoruhusiwa.");
 		    	    	   System.out.println();
 			    	  
 		    		  break;
 		    	  }
 		    	  
-		    	  idadiYaKUkosea +=3;
+		    	  //idadiYaKUkosea +=3;
 					break;
 					
 		      case "Debora":
@@ -122,7 +122,7 @@ class digitalisedGate
 		    	  
 		    		  break;
 		    	  }
-		    	  idadiYaKUkosea +=3;
+
 					break;
 		    	 
 		    	  
@@ -179,7 +179,7 @@ class digitalisedGate
 	    	    	  
 	    	    	   break;
 		    	   }
-		    	  idadiYaKUkosea +=3;
+		    	  
 		    	  break;
 		    	  
 		    	  
@@ -233,7 +233,7 @@ class digitalisedGate
 		    	  
 		    		  break;
 		    	   }
-		    	  idadiYaKUkosea +=3;
+		    	  
 		    
 	break;			    	  			    	  
 		    	  
@@ -555,7 +555,7 @@ public class DigitalGate
 									Scanner jina1 = new Scanner(System.in);
 									final String jinaLaMwenyeji1 = jina1.nextLine();
 									
-									digitalisedGate.mwenyeji(jinaLaMwenyeji1, idadiYaKukosea);
+									digitalisedGate.mwenyeji(jinaLaMwenyeji1);
 									idadiYaKukosea++;
 									}
 									
