@@ -109,9 +109,7 @@ public class DigitalGate
 					  break;
 				
 				case 1:
-				 
-				
-					System.out.println("Unaitwa nani?");
+				    System.out.println("Unaitwa nani?");
 					Scanner jina = new Scanner(System.in);
 					final String jinaLaMwenyeji = jina.nextLine();
 					
