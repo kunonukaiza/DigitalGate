@@ -103,7 +103,7 @@ public class DigitalGate
 								default:
 									System.out.println("Hmmmnh!\n"
 											+ mwenyeMgeni + " sio jina la mwenyeji wa humu ndani!\n"
-											+ "Hujakosea kuandika kweli?\n");
+											+ "Huenda umekosea kuandika, jaribu kuandika tena.\n");
 									break;
 					    }
 					  break;
