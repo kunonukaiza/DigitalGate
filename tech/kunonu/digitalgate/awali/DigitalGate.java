@@ -19,19 +19,234 @@ class digitalisedGate
 	{
 		return name;
 	}	
-	public void mwenyeji() 
+	public static  void mwenyeji(String jinaLaMwenyeji, int idadiYaKUkosea) 
 	{
-		
+		 switch(jinaLaMwenyeji)
+		    {
+		      case "Kaiza":
+		      case "kaiza":
+		      case "KAIZA":
+		    	  System.out.print( "Waoow! " + jinaLaMwenyeji + " tafadhali andika funguo yako ya geti:");
+		    	  Scanner gatePinKaiza1 = new Scanner(System.in);
+		    	  final int DIGITAL_KEY_KAIZA1 = gatePinKaiza1.nextInt();
+		    	  
+		    	  
+		    	  switch ( DIGITAL_KEY_KAIZA1 )
+		    	   {
+		    	      case 2025:
+		    	           System.out.println("\n" + jinaLaMwenyeji +"! "
+		    	  		              + "karibu tena nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+							          + "Tulikukumbuka wenzio!\n"
+							          + "Subiri kidogo geti litafunguka.\n" );
+		    	       break;
+		    	       
+		    	    
+		    	       default:
+		    	    	   
+		    	    	   int idadiYaKukosea = 0;
+		    	    	   while( idadiYaKukosea < 2)
+		    	    	     {
+		    		          System.out.println( "\n" + jinaLaMwenyeji + " umekosea kuingiza nywila yako!\n"
+		    		  		             + "Tafadhali jaribu kuingiza tena kwa umakini.");
+		    		  
+		    		          Scanner gatePinKaiza2 = new Scanner(System.in);
+			    	          final int DIGITAL_KEY_KAIZA2 = gatePinKaiza2.nextInt();
+			    	  
+			    	          if(DIGITAL_KEY_KAIZA2 == 2025)
+			    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
+			    	  		              + "karibu tena nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+								          + "Tulikukumbuka wenzio!\n"
+								          + "Subiri kidogo geti litafunguka.\n" );
+			    	        	  idadiYaKukosea += 3;
+			    	        	 
+			    	        	  }
+			    	          
+			    	          else
+			    	        	  ++idadiYaKukosea;
+			    	           
+			    	       }
+		    	    	   
+		    	    	   if(idadiYaKukosea == 2)
+		    	    	   System.out.println("Umezidi idadi ya kukosea kuingiza nywila inayoruhusiwa.");
+		    	    	   System.out.println();
+			    	  
+		    		  break;
+		    	  }
+		    	  
+		    	  idadiYaKUkosea +=3;
+					break;
+					
+		      case "Debora":
+		      case "debora":
+		      case "DEBORA":
+		    	  System.out.print("Waoow! " + jinaLaMwenyeji + " tafadhali andika funguo yako ya geti: ");
+		    	  Scanner gatePinDebora = new Scanner(System.in);
+		    	  final int DIGITAL_KEY_DEBORA = gatePinDebora.nextInt();
+		    	  
+		    	  
+		    	  switch ( DIGITAL_KEY_DEBORA )
+		    	   {
+		    	  case 2001:
+		    		  System.out.println("\nDebora! Karibu nyumbani kwa " + /*gate1.getName()+*/ "!\n"
+									+ "Tulikukumbuka wenzio!\n"
+									+ "Subiri kidogo geti litafunguka." );
+				    	  break;
+		    	    
+		    	  default:
+		    		  int idadiYaKukosea = 0;
+	    	    	   while( idadiYaKukosea < 2)
+	    	    	     {
+	    		          System.out.println( "\n" + jinaLaMwenyeji + " umekosea kuandika funguo yako!\n"
+	    		  		             + "Tafadhali jaribu tena. Ukikosea mara tatu funguo yako inafungiwa.");
+	    		  
+	    		          Scanner gatePinDebora2 = new Scanner(System.in);
+		    	          final int DIGITAL_KEY_DEBORA2 = gatePinDebora2.nextInt();
+		    	  
+		    	          if(DIGITAL_KEY_DEBORA2 == 2001)
+		    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
+		    	  		              + " karibu tena nyumbani kwa " + /*gate1.getName()+*/ "!\n"
+							          + "Tulikukumbuka wenzio!\n"
+							          + "Subiri kidogo geti litafunguka.\n" );
+		    	        	  idadiYaKukosea += 3;
+		    	        	 
+		    	        	  }
+		    	          
+		    	          else
+		    	        	  ++idadiYaKukosea;
+		    	           
+		    	       }
+	    	    	   
+	    	    	   if(idadiYaKukosea == 2)
+	    	    	   System.out.println("Umezidi idadi ya kukosea kuandika funguo inayoruhusiwa.");
+	    	    	   System.out.println();
+		    	  
+		    		  break;
+		    	  }
+		    	  idadiYaKUkosea +=3;
+					break;
+		    	 
+		    	  
+		      case "Clever":
+		      case "clever":
+		      case "CLEVER":
+		      case "kleva":
+		      case "Kleva":
+		      case "KLEVA":
+		      case "Cleva":
+		      case "cleva":
+		      case "CLEVA":
+		    	  System.out.print( jinaLaMwenyeji + " tafadhali andika funguo yako ya geti: ");
+		    	  Scanner gatePinClever = new Scanner(System.in);
+		    	  final int DIGITAL_KEY_CLEVER = gatePinClever.nextInt();
+		    	  
+		    	  
+		    	  switch ( DIGITAL_KEY_CLEVER )
+		    	   {
+		    	  case 2002:
+		    		  System.out.println("Clever! Karibu nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+									+ "Tulikukumbuka wenzio!\n "
+									+ "Subiri kidogo geti litafunguka.\n" );
+		    		  
+				    	  break;
+		    	    
+		    	  default:
+		    		  int idadiYaKukosea = 0;
+	    	    	   while( idadiYaKukosea < 2)
+	    	    	     {
+	    		          System.out.println( "\n" + jinaLaMwenyeji + " umekosea kuandika funguo yako!\n"
+	    		  		             + "Tafadhali jaribu tena.Ukikosea zaidi ya mara tatu funguo yako inafungiwa.");
+	    		  
+	    		          Scanner gatePinClever2 = new Scanner(System.in);
+		    	          final int DIGITAL_KEY_CLEVER2 = gatePinClever2.nextInt();
+		    	  
+		    	          if(DIGITAL_KEY_CLEVER2 == 2002)
+		    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
+		    	  		              + " karibu tena nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+							          + "Tulikukumbuka wenzio!\n"
+							          + "Subiri kidogo geti litafunguka.\n" );
+		    	        	  idadiYaKukosea += 3;
+		    	        	 
+		    	        	  }
+		    	          
+		    	          else
+		    	        	  ++idadiYaKukosea;
+		    	           
+		    	       }
+	    	    	   
+	    	    	   if(idadiYaKukosea == 2)
+	    	    	   System.out.println("Umezidi idadi ya kukosea kuingiza nywila inayoruhusiwa.");
+	    	    	   System.out.println();
+	    	    	  
+	    	    	   break;
+		    	   }
+		    	  idadiYaKUkosea +=3;
+		    	  break;
+		    	  
+		    	  
+		      case "Mamwimote":
+		      case "mamwimote":
+		      case "MAMWIMOTE":
+		      case "mama mwimote":
+		      case "Mama Mwimote":
+		      case "MAMA MWIMOTE":
+		    	  System.out.print(jinaLaMwenyeji + " tafadhali andika funguo yako ya geti: ");
+		    	  Scanner gatePinMamwimote = new Scanner(System.in);
+		    	  final int DIGITAL_KEY_MAMWIMOTE = gatePinMamwimote.nextInt();
+		    	  
+		    	  
+		    	  switch ( DIGITAL_KEY_MAMWIMOTE )
+		    	   {
+		    	  case 1973:
+		    		  System.out.println( jinaLaMwenyeji + "Karibu nyumbani kwako.\n"
+									+ "Tulikukumbuka wenzio!\n"
+									+ "Subiri kidogo geti litafunguka." );
+		    		  
+				    	  break;
+		    	    
+		    	  default:
+		    		  int idadiYaKukosea = 0;
+	    	    	   while( idadiYaKukosea < 2)
+	    	    	     {
+	    		          System.out.println( "\n" + jinaLaMwenyeji + " umekosea kuandika funguo yako!\n"
+	    		  		             + "Tafadhali jaribu tena.Ukikosea zaidi ya mara tatu funguo yako inafunguwa.");
+	    		  
+	    		          Scanner gatePinMamwimote2 = new Scanner(System.in);
+		    	          final int DIGITAL_KEY_MAMWIMOTE2 = gatePinMamwimote2.nextInt();
+		    	  
+		    	          if(DIGITAL_KEY_MAMWIMOTE2 == 1973)
+		    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
+		    	  		              + " karibu tena nyumbani kwako!\n"
+							          + "Tulikukumbuka wenzio!\n"
+							          + "Subiri kidogo geti litafunguka.\n" );
+		    	        	  idadiYaKukosea += 3;
+		    	        	 
+		    	        	  }
+		    	          
+		    	          else
+		    	        	  ++idadiYaKukosea;
+		    	           
+		    	       }
+	    	    	   
+	    	    	   if(idadiYaKukosea == 2)
+	    	    	   System.out.println("Umezidi idadi ya kukosea kuandika funguo inayoruhusiwa.");
+	    	    	   System.out.println();
+		    	  
+		    		  break;
+		    	   }
+		    	  idadiYaKUkosea +=3;
+		    
+	break;			    	  			    	  
+		    	  
 	}
 
-}
+}}
 
  //start of class 'DigitalGate'
 public class DigitalGate
 {
 
 	// start of main method 'DigitalGate'
-	@SuppressWarnings("resource")
+	
 	public static void main(String[] args) 
 	{		
 		digitalisedGate gate1 = new digitalisedGate("Mamwimote"); // creating a 'digitalisedGate' object
@@ -332,7 +547,7 @@ public class DigitalGate
 								
 								default:
 									int idadiYaKukosea = 0;
-									while(idadiYaKukosea<3)
+									while(idadiYaKukosea<2)
 									{
 									System.out.println("Hmmmn!\n"
 											+ jinaLaMwenyeji + " sio jina la mwenyeji wa humu ndani!\n"
@@ -340,7 +555,15 @@ public class DigitalGate
 									Scanner jina1 = new Scanner(System.in);
 									final String jinaLaMwenyeji1 = jina1.nextLine();
 									
+									digitalisedGate.mwenyeji(jinaLaMwenyeji1, idadiYaKukosea);
+									idadiYaKukosea++;
 									}
+									
+									if(idadiYaKukosea == 2)
+						    	    	   System.out.println("Umezidi idadi ya kukosea kuandika jina inayoruhusiwa.");
+					    	    	   System.out.println();
+						    	  
+						    		  
 									break;
 						  
 						}
