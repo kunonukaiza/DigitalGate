@@ -18,7 +18,13 @@ class digitalisedGate
 	public String getName()
 	{
 		return name;
-	}	
+	}
+	
+	public static void mgeni() 
+	{
+		
+	}
+	
 	public static  void mwenyeji(String jinaLaMwenyeji, int idadiYaKUkosea) 
 	{
 		 switch(jinaLaMwenyeji)
