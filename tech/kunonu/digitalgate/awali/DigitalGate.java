@@ -19,6 +19,10 @@ class digitalisedGate
 	{
 		return name;
 	}	
+	public void mwenyeji() 
+	{
+		
+	}
 
 }
 
