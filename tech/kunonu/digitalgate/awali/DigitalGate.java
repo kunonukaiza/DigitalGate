@@ -119,7 +119,7 @@ public class DigitalGate
 					      case "Kaiza":
 					      case "kaiza":
 					      case "KAIZA":
-					    	  System.out.print( "Waoow! " + jinaLaMwenyeji + " tafadhali ingiza nywila yako ya geti:");
+					    	  System.out.print( "Waoow! " + jinaLaMwenyeji + " tafadhali andika funguo yako ya geti:");
 					    	  Scanner gatePinKaiza1 = new Scanner(System.in);
 					    	  final int DIGITAL_KEY_KAIZA1 = gatePinKaiza1.nextInt();
 					    	  
