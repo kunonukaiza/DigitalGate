@@ -22,7 +22,57 @@ class digitalisedGate
 	
 	public static void mgeni() 
 	{
-		
+		System.out.println("Karibu nyumbani kwa " + gate1.getName() +"!\n" 
+				              +"Una shida na nani kwani?\n");
+					Scanner jinaLaMtafutwa = new Scanner(System.in);
+					final String mwenyeMgeni = jinaLaMtafutwa.nextLine();
+					
+					
+					  switch(mwenyeMgeni)
+					    {
+					      case "Kaiza":
+					      case "kaiza":
+					      case "KAIZA":
+					    	  System.out.println("Mpigie au mtumie meseji Kaiza kwa namba hii: 0629831936\n"
+							    		+ "Ili aje akusaidie kufungua geti!\n");
+							    break;
+							    
+					      case "Debora":
+					      case "debora":
+					      case "DEBORA":
+					    	  System.out.println("Mpigie au mtumie meseji Debora kwa namba hii: 0621609385\n"
+							    		+ "Ili aje akusaidie kufungua geti!\n");
+					    	  
+					    	  break;
+					    	  
+					      case "Clever":
+					      case "clever":
+					      case "CLEVER":
+					    	  System.out.println("Mpigie au mtumie meseji Clever kwa namba hii: 0745820931\n"
+							    		+ "Ili aje akusaidie kufungua geti!\n");
+					    	  break;
+					    	  
+					      case "Mamwimote":
+					      case "mamwimote":
+					      case "MAMWIMOTE":
+					      case "Mama Mwimote":
+					      case "mama mwimote":
+					      case "mamamwimote":
+					      case "MamaMwimote":
+					      case "MAMAMWIMOTE":
+					      case "MAMA MWIMOTE":
+					    	  System.out.println("Mpigie au mtumie meseji Mama Mwimote kwa namba hii: 0752876877\n"
+							    		+ "Ili aje akusaidie kufungua geti!\n");
+					    	  break;			    	  			    	  
+					    	  
+								
+								default:
+									System.out.println("Hmmmnh!\n"
+											+ mwenyeMgeni + " sio jina la mwenyeji wa humu ndani!\n"
+											+ "Huenda umekosea kuandika, jaribu kuandika tena.\n");
+									break;
+					    }
+					  break;
 	}
 	
 	public static  void mwenyeji(String jinaLaMwenyeji, int idadiYaKUkosea) 
