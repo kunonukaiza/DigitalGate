@@ -1,11 +1,14 @@
 package tech.kunonu.digitalgate.awali;
 
 import java.util.Scanner;
-class digitalisedGate 
+
+class digitalGateLibrary 
+
 {
 	private String name;
+	private static digitalGateLibrary gate1 = new digitalGateLibrary("Mamwimote");
 	
-	digitalisedGate(String name)//constructor
+	digitalGateLibrary(String name)//constructor
 	{
 		this.name = name;
 	}
@@ -20,7 +23,7 @@ class digitalisedGate
 		return name;
 	}
 	
-	public static void mgeni() 
+	public static void mgeni()  // start of mgeni() method
 	{
 		System.out.println("Karibu nyumbani kwa " + gate1.getName() +"!\n" 
 				              +"Una shida na nani kwani?\n");
@@ -48,6 +51,8 @@ class digitalisedGate
 					      case "Clever":
 					      case "clever":
 					      case "CLEVER":
+					      case"kleva":
+					      case "Kleva":
 					    	  System.out.println("Mpigie au mtumie meseji Clever kwa namba hii: 0745820931\n"
 							    		+ "Ili aje akusaidie kufungua geti!\n");
 					    	  break;
@@ -72,7 +77,7 @@ class digitalisedGate
 											+ "Huenda umekosea kuandika, jaribu kuandika tena.\n");
 									break;
 					    }
-					  break;
+					  
 	}
 	
 	public static  void mwenyeji(String jinaLaMwenyeji, int idadiYaKUkosea) 
@@ -91,7 +96,7 @@ class digitalisedGate
 		    	   {
 		    	      case 2025:
 		    	           System.out.println("\n" + jinaLaMwenyeji +"! "
-		    	  		              + "karibu tena nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+		    	  		              + "karibu tena nyumbani kwa " + gate1.getName()+ "!\n"
 							          + "Tulikukumbuka wenzio!\n"
 							          + "Subiri kidogo geti litafunguka.\n" );
 		    	       break;
@@ -110,7 +115,7 @@ class digitalisedGate
 			    	  
 			    	          if(DIGITAL_KEY_KAIZA2 == 2025)
 			    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
-			    	  		              + "karibu tena nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+			    	  		              + "karibu tena nyumbani kwa " + gate1.getName() + "!\n"
 								          + "Tulikukumbuka wenzio!\n"
 								          + "Subiri kidogo geti litafunguka.\n" );
 			    	        	  idadiYaKukosea += 3;
@@ -143,7 +148,7 @@ class digitalisedGate
 		    	  switch ( DIGITAL_KEY_DEBORA )
 		    	   {
 		    	  case 2001:
-		    		  System.out.println("\nDebora! Karibu nyumbani kwa " + /*gate1.getName()+*/ "!\n"
+		    		  System.out.println("\nDebora! Karibu nyumbani kwa " + gate1.getName() + "!\n"
 									+ "Tulikukumbuka wenzio!\n"
 									+ "Subiri kidogo geti litafunguka." );
 				    	  break;
@@ -160,7 +165,7 @@ class digitalisedGate
 		    	  
 		    	          if(DIGITAL_KEY_DEBORA2 == 2001)
 		    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
-		    	  		              + " karibu tena nyumbani kwa " + /*gate1.getName()+*/ "!\n"
+		    	  		              + " karibu tena nyumbani kwa " + gate1.getName() + "!\n"
 							          + "Tulikukumbuka wenzio!\n"
 							          + "Subiri kidogo geti litafunguka.\n" );
 		    	        	  idadiYaKukosea += 3;
@@ -199,7 +204,7 @@ class digitalisedGate
 		    	  switch ( DIGITAL_KEY_CLEVER )
 		    	   {
 		    	  case 2002:
-		    		  System.out.println("Clever! Karibu nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+		    		  System.out.println("Clever! Karibu nyumbani kwa " + gate1.getName() + "!\n"
 									+ "Tulikukumbuka wenzio!\n "
 									+ "Subiri kidogo geti litafunguka.\n" );
 		    		  
@@ -217,7 +222,7 @@ class digitalisedGate
 		    	  
 		    	          if(DIGITAL_KEY_CLEVER2 == 2002)
 		    	        	  {System.out.println("\n" + jinaLaMwenyeji +"!"
-		    	  		              + " karibu tena nyumbani kwa " +/* gate1.getName()+*/ "!\n"
+		    	  		              + " karibu tena nyumbani kwa " + gate1.getName() + "!\n"
 							          + "Tulikukumbuka wenzio!\n"
 							          + "Subiri kidogo geti litafunguka.\n" );
 		    	        	  idadiYaKukosea += 3;
@@ -305,7 +310,7 @@ public class DigitalGate
 	
 	public static void main(String[] args) 
 	{		
-		digitalisedGate gate1 = new digitalisedGate("Mamwimote"); // creating a 'digitalisedGate' object
+		digitalGateLibrary gate1 = new digitalGateLibrary("Mamwimote"); // creating a 'digitalisedGate' object
 		boolean pressedDoorKnob = true; //declaring and initialising 'pressedDoorKnob' boolean variable
 		boolean unpressedDoorKnob = false; // declaring and initialising 'unpressedDoorKnob' boolean variable
 	
@@ -611,7 +616,7 @@ public class DigitalGate
 									Scanner jina1 = new Scanner(System.in);
 									final String jinaLaMwenyeji1 = jina1.nextLine();
 									
-									digitalisedGate.mwenyeji(jinaLaMwenyeji1, idadiYaKukosea);
+									digitalGateLibrary.mwenyeji(jinaLaMwenyeji1, idadiYaKukosea);
 									idadiYaKukosea++;
 									}
 									
@@ -627,6 +632,7 @@ public class DigitalGate
 					
 					default:
 						System.out.println("Namba uliyoingiza siyo sahihi. Tafadhali jaribu tena!");
+						digitalGateLibrary.mgeni();
 						break;
 						
 				 }
