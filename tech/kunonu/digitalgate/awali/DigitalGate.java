@@ -9,7 +9,7 @@ class digitalGateLibrary
 	private static digitalGateLibrary gate1 = new digitalGateLibrary("Mamwimote");
 	
 	digitalGateLibrary(String name)//constructor
-	{
+	{ 
 		this.name = name;
 	}
 	
@@ -26,7 +26,7 @@ class digitalGateLibrary
 	public static void mgeni()  // start of mgeni() method
 	{
 		System.out.println("Karibu nyumbani kwa " + gate1.getName() +"!\n" 
-				              +"Una shida na nani kwani?\n");
+				              +"Tafadhari andika jina la mwenyeji wako!\n");
 					Scanner jinaLaMtafutwa = new Scanner(System.in);
 					final String mwenyeMgeni = jinaLaMtafutwa.nextLine();
 					
@@ -36,6 +36,10 @@ class digitalGateLibrary
 					      case "Kaiza":
 					      case "kaiza":
 					      case "KAIZA":
+					      case "Kaizer":
+					      case "KAIZER":
+					      case "kaizer":
+					      case "caiza":
 					    	  System.out.println("Mpigie au mtumie meseji Kaiza kwa namba hii: 0629831936\n"
 							    		+ "Ili aje akusaidie kufungua geti!\n");
 							    break;
@@ -310,19 +314,19 @@ public class DigitalGate
 	
 	public static void main(String[] args) 
 	{		
-		digitalGateLibrary gate1 = new digitalGateLibrary("Mamwimote"); // creating a 'digitalisedGate' object
-		boolean pressedDoorKnob = true; //declaring and initialising 'pressedDoorKnob' boolean variable
-		boolean unpressedDoorKnob = false; // declaring and initialising 'unpressedDoorKnob' boolean variable
+		digitalGateLibrary gate1 = new digitalGateLibrary("Mamwimote"); // creating a 'digitalGateLibrary' object
+		boolean presenceOfInfraredHeat = true; //declaring and initialising 'pressedDoorKnob' boolean variable
+		boolean absenceOfInfraredHeat = false; // declaring and initialising 'unpressedDoorKnob' boolean variable
 	
 		
-		if (unpressedDoorKnob) 
+		if (absenceOfInfraredHeat) 
 		{
 			System.out.println("Karibu nyumbani kwa " +gate1.getName() + "!");
 		}
 		
 		else
 		{
-			if(pressedDoorKnob) 
+			if(presenceOfInfraredHeat) 
 			  {
 				System.out.println("		GETI LIMEFUNGWA!		 ");
 			    System.out.println("MWENYEJI-tafadhali bonyeza 1 kufungua geti!\n "
@@ -337,7 +341,7 @@ public class DigitalGate
 				
 				case 0:
 					System.out.println("Karibu nyumbani kwa " + gate1.getName() +"!\n" 
-				              +"Una shida na nani kwani?\n");
+				              +"Tafadhali andika jina la mwenyeji wako!\n");
 					Scanner jinaLaMtafutwa = new Scanner(System.in);
 					final String mwenyeMgeni = jinaLaMtafutwa.nextLine();
 					
