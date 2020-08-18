@@ -1,4 +1,4 @@
-package tech.kunonu.digitalgate.awali;
+package kunonu.digitalgate.awali;
 
 class about
 {
